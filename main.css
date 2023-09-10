@@ -13,7 +13,7 @@ body {
     height: 100vh;
 }
 
-#slackDisplayImage {
+[data-testid='slackDisplayImage'] {
     object-fit: cover;
     object-position: top;
     height: 200px;

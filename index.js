@@ -9,7 +9,7 @@ function Day() {
     dayOfTheWeek[5] = "Friday"
     dayOfTheWeek[6] = "Saturday"
     // return dayOfTheWeek[date.getDay()];
-    document.querySelector("[data-testid=currentDayOfTheWeek]").innerHTML = dayOfTheWeek[date.getDay()];
+    document.querySelector("[data-testid='currentDayOfTheWeek']").innerHTML = dayOfTheWeek[date.getDay()];
 }
 // const currentDay = 
 Day();
@@ -18,7 +18,7 @@ Day();
 function currentUTCTime() {
     let d = new Date();
     let utcTimeMilli = d.getTime();
-    document.querySelector("[data-testid=currentUTCTime]").innerHTML = utcTimeMilli;
+    document.querySelector("[data-testid='currentUTCTime']").innerHTML = utcTimeMilli;
 }
 currentUTCTime();
 setInterval(currentUTCTime, 1000);
