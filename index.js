@@ -8,13 +8,10 @@ function Day() {
     dayOfTheWeek[4] = "Thursday"
     dayOfTheWeek[5] = "Friday"
     dayOfTheWeek[6] = "Saturday"
-    // return dayOfTheWeek[date.getDay()];
     document.querySelector("[data-testid='currentDayOfTheWeek']").innerHTML = dayOfTheWeek[date.getDay()];
 }
-// const currentDay = 
 Day();
 
-//utc time in milliseconds
 function currentUTCTime() {
     let d = new Date();
     let utcTimeMilli = d.getTime();
