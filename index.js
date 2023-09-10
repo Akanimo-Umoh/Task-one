@@ -1,6 +1,5 @@
-const date = new Date();
-
 function Day() {
+    const date = new Date();
     let dayOfTheWeek = new Array(7);
     dayOfTheWeek[0] = "Sunday"
     dayOfTheWeek[1] = "Monday"
@@ -13,5 +12,11 @@ function Day() {
 }
 const currentDay = document.querySelector("#currentDayOfTheWeek");
 currentDay.innerHTML = Day();
-
-document.querySelector("#currentUTCTime").innerHTML = date.toUTCString();
+//utc time in milliseconds
+function currentUTCTime() {
+    let d = new Date();
+    let utcTimeMilli = d.getTime();
+    document.querySelector("#currentUTCTime").innerHTML = utcTimeMilli;
+}
+currentUTCTime();
+setInterval(currentUTCTime, 1000);
